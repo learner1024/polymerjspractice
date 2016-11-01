@@ -1,0 +1,11 @@
+{
+  "name": "polymerjspractice",
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "dependencies": {
+    "polymer": "^1.7.0"
+  }
+}
