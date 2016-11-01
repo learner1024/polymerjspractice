@@ -1,0 +1,29 @@
+<dom-module id="first-comp-v2">
+    <template>
+        <style>
+
+        </style>
+        This is First Component V2
+    </template>
+    <script>
+
+        Polymer({
+            is: "first-comp-v2",
+            created: function(){
+                console.log("created");
+            },
+            ready: function(){
+                console.log("ready");
+            },
+            attached: function(){
+                console.log("attached");
+            },
+            detached: function(){
+                console.log("detached");
+            },
+            attributeChanged: function(){
+                console.log("attributeChanged");
+            }
+        });
+    </script>
+</dom-module>

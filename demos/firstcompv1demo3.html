@@ -1,0 +1,22 @@
+<link rel="import" href="../pcomponents/first-comp-v1.html" />
+<dom-module id="first-comp-v1-demo3">
+    <template>
+        <style>
+        </style>
+        <h1>This is Demo 3 for First Component v1</h1>
+        <h2>3/3 Way of consuming polymer component - Element Constructor</h2>
+
+    </template>
+    <script>
+        Polymer({
+            is: "first-comp-v1-demo3",
+            ready: function(){
+
+                var el2 = new FirstCompV1()
+
+                document.body.appendChild(el2);
+                
+            }
+        });
+    </script>
+</dom-module>
