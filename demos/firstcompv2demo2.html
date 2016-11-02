@@ -1,0 +1,24 @@
+<link rel="import" href="../pcomponents/first-comp-v2">
+<dom-module id="first-comp-v2-demo2">
+  <template>
+    <style>
+    </style>
+    <h1>This is Demo 1 for First Component v2</h1>
+    <h2>check console log. that should explain what lifecycle events were fired.</h2>
+  </template>
+  <script>
+    Polymer({
+      is: "first-comp-v2-demo2",
+      ready: function(){
+        console.log("Creating first-comp-v2 programatically now")
+        var el1 = document.createElement("first-comp-v2");
+        console.log("Created first-comp-v2 programatically")
+
+        console.log("Appending to dom element created above")
+        Polymer.dom(this.root).appendChild(el1);
+        console.log("Appended to dom element created above")
+
+      }
+    });
+  </script>
+</dom-module>
