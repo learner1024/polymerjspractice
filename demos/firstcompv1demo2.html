@@ -13,8 +13,7 @@
             ready: function(){
 
                 var el1 = document.createElement("first-comp-v1");
-
-                document.body.appendChild(el1);
+                Polymer.dom(this.root).appendChild(el1);
                 
             }
         });

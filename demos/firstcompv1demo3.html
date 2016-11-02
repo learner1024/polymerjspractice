@@ -12,9 +12,8 @@
             is: "first-comp-v1-demo3",
             ready: function(){
 
-                var el2 = new FirstCompV1()
-
-                document.body.appendChild(el2);
+                var el2 = new FirstCompV1();
+                Polymer.dom(this.root).appendChild(el2);
                 
             }
         });
