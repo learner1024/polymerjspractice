@@ -8,7 +8,11 @@
     <script>
 
         FirstCompV1 = Polymer({
-            is: "first-comp-v1"
+            is: "first-comp-v1",
+
+            factoryImpl: function(foo, bar){
+                console.log("factoryImpl was invoked with args " + foo + " and " + bar);
+            }
         });
     </script>
 </dom-module>

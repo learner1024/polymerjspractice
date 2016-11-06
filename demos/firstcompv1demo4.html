@@ -1,0 +1,22 @@
+<link rel="import" href="../pcomponents/first-comp-v1.html" />
+<dom-module id="first-comp-v1-demo4">
+    <template>
+        <style>
+        </style>
+        <h1>This is Demo 4 for First Component v1</h1>
+        <h2>providing implementation of factoryImpl for Element Constructor</h2>
+        <first-comp-v1></first-comp-v1>
+
+    </template>
+    <script>
+        Polymer({
+            is: "first-comp-v1-demo4",
+            ready: function(){
+
+                var el2 = new FirstCompV1("fooVal", "barVal");
+                Polymer.dom(this.root).appendChild(el2);
+                
+            }
+        });
+    </script>
+</dom-module>
